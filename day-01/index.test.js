@@ -18,6 +18,13 @@ describe('primitive code challenges', () => {
       expect(titleCaseWord('amANda iS amaZing')).toEqual('Amanda Is Amazing');
     });
 
+    it('should determine even or odd', () => {
+      const num = 0;
+      expect(num % 2 === 0).toBe('even');
+      expect(num % 2 === 1).toBe('odd');
+
+    });
+
 
 
 
