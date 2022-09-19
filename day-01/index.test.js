@@ -1,4 +1,4 @@
-const { reverseSentence } = require('./index');
+const { reverseSentence, addPunctuation } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -11,7 +11,7 @@ describe('primitive code challenges', () => {
       const addQuery = addPunctuation('???');
       const awesome = addExcitment('Amanda Rocks');
       expect(awesome).toEqual('Amanda Rocks!!!');
-      expect(addQuery('What did you say?')).toEqual('What did you say??');
+      expect(addQuery('What did you say')).toEqual('What did you say???');
     });
 
 
