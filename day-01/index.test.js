@@ -15,7 +15,7 @@ describe('primitive code challenges', () => {
     });
 
     it('should title case words', () => {
-      expect(titleCaseWord('amanda is amazing')).toEqual('Amanda Is Amazing');
+      expect(titleCaseWord('amANda iS amaZing')).toEqual('Amanda Is Amazing');
     });
 
 
