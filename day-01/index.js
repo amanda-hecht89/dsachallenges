@@ -28,4 +28,15 @@ function oddOrEven(number) {
 function arrayAt(arr, i) {
   return i >= 0 ? arr[i] : arr[arr.length + i];
 }
-module.exports = { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt };
+
+function anagrams(str1, str2) {
+  const five = str1.split('');
+  const six = str2.split('');
+
+  return five.map(Letter => six.includes(Letter)).includes(false) ? false : true;
+}
+
+
+
+
+module.exports = { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt, anagrams };
