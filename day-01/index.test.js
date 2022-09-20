@@ -48,6 +48,14 @@ describe('primitive code challenges', () => {
       expect(fizzBuzz(15)).toEqual(fizzBuzzArray);
     });
 
+    it('should takes a number and returns an array that contains, all of the numbers from 1 to 50 that are multiples of said number', () => {
+      expect(multiples(5)).toEqual([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+      expect(multiples(10)).toEqual([10, 20, 30, 40, 50]);
+      expect(multiples(15)).toEqual([15, 30, 45]);
+      expect(multiples(20)).toEqual([20, 40]);
+      expect(multiples(25)).toEqual([25, 50]);
+    });
+
 
 
 
