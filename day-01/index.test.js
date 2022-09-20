@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation, titleCaseWord, oddOrEven } = require('./index');
+const { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -28,8 +28,8 @@ describe('primitive code challenges', () => {
 
     it('should find array.at', () => {
       const arr = [5, 6, 7, 8];
-      expect(at(arr, 2)).toEqual(7);
-      expect(at(arr, -1)).toEqual(8)
+      expect(arrayAt(arr, 2)).toEqual(7);
+      expect(arrayAt(arr, -1)).toEqual(8);
     });
 
 

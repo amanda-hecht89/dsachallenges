@@ -24,4 +24,8 @@ function oddOrEven(number) {
   String(number).split('').map(number => num += Number(number));
   return num % 2 === 0 ? 'even' : 'odd';
 }
-module.exports = { reverseSentence, addPunctuation, titleCaseWord, oddOrEven };
+
+function arrayAt(arr, i) {
+  return i >= 0 ? arr[i] : arr[arr.length + i];
+}
+module.exports = { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt };
