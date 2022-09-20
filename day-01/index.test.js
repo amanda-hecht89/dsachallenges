@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt, anagrams, fizzBuzz, multiple } = require('./index');
+const { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt, anagrams, fizzBuzz, multiple, rootDigit } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
