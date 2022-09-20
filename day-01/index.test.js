@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt, anagrams } = require('./index');
+const { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt, anagrams, fizzBuzz } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -43,8 +43,8 @@ describe('primitive code challenges', () => {
     });
 
     it('should replace certain numbers with the words fizz and buzz in an array', () => {
-      const fizzBuzzArray = [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 
-        11, 'Fizz', 13, 14, 'FizzBuzz', 16];
+      const fizzBuzzArray = [1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 
+        11, 'fizz', 13, 14, 'fizzBuzz'];
       expect(fizzBuzz(15)).toEqual(fizzBuzzArray);
     });
 

@@ -36,7 +36,21 @@ function anagrams(str1, str2) {
   return five.map(Letter => six.includes(Letter)).includes(false) ? false : true;
 }
 
+function fizzBuzz(number) {
+  const numArr = [];
+  for (let i = 1; i <= number; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      numArr.push('fizzBuzz');
+    } else if (i % 3 === 0) {
+      numArr.push('fizz');
+    } else if (i% 5 === 0) {
+      numArr.push('buzz');
+    } else numArr.push(i);
+
+  } return numArr;
+}
 
 
 
-module.exports = { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt, anagrams };
+
+module.exports = { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt, anagrams, fizzBuzz };
