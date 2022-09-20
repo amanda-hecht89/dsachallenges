@@ -26,6 +26,12 @@ describe('primitive code challenges', () => {
       expect(oddOrEven(41)).toBe('odd');
     });
 
+    it('should find array.at', () => {
+      const arr = [5, 6, 7, 8];
+      expect(at(arr, 2)).toEqual(7);
+      expect(at(arr, -1)).toEqual(8)
+    });
+
 
 
 
