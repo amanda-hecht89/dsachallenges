@@ -42,6 +42,12 @@ describe('primitive code challenges', () => {
       expect(anagrams(third, fourth)).toEqual(false);
     });
 
+    it('should replace certain numbers with the words fizz and buzz in an array', () => {
+      const fizzBuzzArray = [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 
+        11, 'Fizz', 13, 14, 'FizzBuzz', 16];
+      expect(fizzBuzz(15)).toEqual(fizzBuzzArray);
+    });
+
 
 
 
