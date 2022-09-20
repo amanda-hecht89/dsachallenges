@@ -1,4 +1,5 @@
-const { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt } = require('./index');
+const { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt,
+anagrams } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -30,6 +31,18 @@ describe('primitive code challenges', () => {
       const arr = [5, 6, 7, 8];
       expect(arrayAt(arr, 2)).toEqual(7);
       expect(arrayAt(arr, -1)).toEqual(8);
+    });
+
+    it('should return true false for anagram', () => {
+      const first = 'debit card';
+      const second = 'bad credit';
+      const third = 'banana';
+      const fourth = 'amanda';
+
+      expect(anagrams(first, second)).toEqual(true);
+      expect(anagrams(third, fourth)).toEqual(false);
+
+
     });
 
 
