@@ -56,6 +56,12 @@ describe('primitive code challenges', () => {
       expect(multiple(25)).toEqual([25, 50]);
     });
 
+    it(' rootDigit should return a single digit sum of number', () => {
+      expect(rootDigit(123)).toEqual(6);
+      expect(rootDigit(4322)).toEqual(2);
+      expect(rootDigit(999888777)).toEqual(9);
+    });
+
 
 
 
