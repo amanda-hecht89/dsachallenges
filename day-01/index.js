@@ -43,14 +43,22 @@ function fizzBuzz(number) {
       numArr.push('fizzBuzz');
     } else if (i % 3 === 0) {
       numArr.push('fizz');
-    } else if (i% 5 === 0) {
+    } else if (i % 5 === 0) {
       numArr.push('buzz');
     } else numArr.push(i);
-
   } return numArr;
+}
+
+function multiple(number) {
+  const arr = [];
+  if (number >= 50) return arr;
+  for (let i = 1; i <= 50; i++) {
+    if (i % number === 0) arr.push(i);
+  }
+  return arr;
 }
 
 
 
 
-module.exports = { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt, anagrams, fizzBuzz };
+module.exports = { reverseSentence, addPunctuation, titleCaseWord, oddOrEven, arrayAt, anagrams, fizzBuzz, multiple };
