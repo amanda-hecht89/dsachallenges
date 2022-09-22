@@ -21,13 +21,9 @@ class BinaryTreeNode {
       } else {
         this.right.addBinTree(node);
       }
-    } return node;
-    
+    } return node;  
   };
-
 }
-
-
 module.exports = { BinaryTreeNode };
 
 

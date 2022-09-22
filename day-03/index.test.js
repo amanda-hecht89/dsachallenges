@@ -6,13 +6,12 @@ describe('node based data structures', () => {
     const A = new BinaryTreeNode('A');
     const C = new BinaryTreeNode('C');
     const D = new BinaryTreeNode('D');
-    console.log('before', B);
     B.addBinTree(A);
     B.addBinTree(D);
     B.addBinTree(C);
-    console.log('after', B);
-    expect(B.right).toEqual({ 'addBinTree': expect.any(Function), 'data': 'D', 'left': { 'addBinTree': expect.any(Function), 'data': 'C', 'left': null, 'right': null }, 'right': null });
-
-    
+    expect(B.right).toEqual({ 'addBinTree': 
+    expect.any(Function), 'data': 'D', 'left': 
+    { 'addBinTree': expect.any(Function), 
+      'data': 'C', 'left': null, 'right': null }, 'right': null });
   });
 });
