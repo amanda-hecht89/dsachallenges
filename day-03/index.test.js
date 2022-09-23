@@ -1,38 +1,33 @@
-const { BinaryTreeNode } = require('./index');
-const { PersonTreeNode } = require('./personIndex');
+const { BinaryTree } = require('./index');
 
 describe('node based data structures', () => {
-  it.skip('add to bianary node', () => {
-    const B = new BinaryTreeNode('B');
-    const A = new BinaryTreeNode('A');
-    const C = new BinaryTreeNode('C');
-    const D = new BinaryTreeNode('D');
-    B.addBinTree(A);
-    B.addBinTree(D);
-    B.addBinTree(C);
-    expect(B.right).toEqual({ 'addBinTree': 
-    expect.any(Function), 'data': 'D', 'left': 
-    { 'addBinTree': expect.any(Function), 
+  it('add node should add node', () => {
+    const A = new BinaryTree('A');
+    const B = new BinaryTree('B');
+    const C = new BinaryTree('C');
+    const D = new BinaryTree('D');
+    B.addTree(A);
+    B.addTree(D);
+    B.addTree(C);
+    expect(B.right).toEqual({ 'addTree':
+    expect.any(Function), 'findPerson': expect.any(Function), 'data': 'D', 'left':
+    { 'addTree': expect.any(Function), 'findPerson': expect.any(Function),
       'data': 'C', 'left': null, 'right': null }, 'right': null });
   });
+  it('find(person should return person', () => {
+    const jerry = new BinaryTree('Jerry');
+    const o = new BinaryTree(0);
+    const jeremy = new BinaryTree('Jeremy');
+    const jeff = new BinaryTree('Jeff');
 
-  it('find a person in the bianary node', () => {
-    const sam = new PersonTreeNode('Sam');
-    const o = new PersonTreeNode(0);
-    const dean = new PersonTreeNode('Dean');
-    const bobby = new PersonTreeNode('Bobby');
+    jerry.addTree(o);
+    jerry.addTree(jeremy);
+    jerry.addTree(jeff);
 
-    sam.addPeopleTree(o);
-    sam.addPeopleTree(bobby);
-    sam.addPeopleTree(dean);
-
-    expect(sam.findPerson('Sam')).toEqual({
-      'addPeopleTree': expect.any(Function), 
-      'findPerson': expect.any(Function),
-      data: 'Sam',
-      'left': expect.any(Object),
-      'right': expect.any(Object)
+    expect(jerry.findPerson('Jerry')).toEqual({
+      'addTree': expect.any(Function), 'findPerson': expect.any(Function), data: 'Jerry',
+      'left': expect.any(Object), 'right': expect.any(Object)
     });
-    expect(sam.findPerson('Castiel')).toEqual(null);
+    expect(jerry.findPerson('Lucas')).toEqual(null);
   });
 });
