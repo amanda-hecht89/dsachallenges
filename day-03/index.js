@@ -31,6 +31,7 @@ class BinaryTree {
           return foundLeft;
         }
       }
+      
       if (this.right !== null) {
         const foundRight = this.right.findPerson(name);
         if (foundRight) {
